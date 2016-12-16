@@ -176,23 +176,24 @@
 
 
               getClass = function(s) {
-                switch (Math.round(s / 33)) {
-                  case 0:
-                  case 1:
-                    return {
-                      inner: scope.outterClassPrefix + 'danger',
-                      outter: scope.innerClassPrefix + 'alert'
-                    };
-                  case 2:
+                
+                if(s < 50) {
+                  return {
+                      outter: scope.outterClassPrefix + 'danger',
+                      inner: scope.innerClassPrefix + 'alert'
+                   };
+                }
+                else if(s => 50 && s < 70) {
                     return {
                       outter: scope.outterClassPrefix + 'warning',
                       inner: scope.innerClassPrefix + 'warning'
-                    };
-                  case 3:
+                    };                  
+                }
+                else {
                     return {
                       outter: scope.outterClassPrefix + 'success',
                       inner: scope.innerClassPrefix + 'success'
-                    };
+                    };                  
                 }
               };
 
