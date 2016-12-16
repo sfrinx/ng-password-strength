@@ -179,11 +179,11 @@
                 
                 if(s < 50) {
                   return {
-                      outter: scope.outterClassPrefix + 'danger',
-                      inner: scope.innerClassPrefix + 'alert'
+                      outter: scope.outterClassPrefix + 'alert',
+                      inner: scope.innerClassPrefix + 'danger'
                    };
                 }
-                else if(s => 50 && s < 70) {
+                else if(s >= 50 && s < 70) {
                     return {
                       outter: scope.outterClassPrefix + 'warning',
                       inner: scope.innerClassPrefix + 'warning'
