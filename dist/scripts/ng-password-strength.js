@@ -179,7 +179,7 @@
                 
                 if(s < 50) {
                   return {
-                      outter: scope.outterClassPrefix + 'alert',
+                      outter: scope.outterClassPrefix + 'danger',
                       inner: scope.innerClassPrefix + 'danger'
                    };
                 }
