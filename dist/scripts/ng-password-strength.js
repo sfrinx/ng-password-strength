@@ -177,13 +177,13 @@
 
               getClass = function(s) {
                 
-                if(s < 50) {
+                if(s < 45) {
                   return {
                       outter: scope.outterClassPrefix + 'danger',
                       inner: scope.innerClassPrefix + 'danger'
                    };
                 }
-                else if(s >= 50 && s < 70) {
+                else if(s >= 45 && s < 65) {
                     return {
                       outter: scope.outterClassPrefix + 'warning',
                       inner: scope.innerClassPrefix + 'warning'
